@@ -5,6 +5,10 @@
   <img src="https://img.shields.io/badge/Forensic_Scientist-UGC_NET_Qualified-b57bee?style=for-the-badge&logo=doctor" alt="Forensic Scientist" />
 </p>
 
+<p align="center">
+  <img src="avatar.jpg" alt="Aditya Ranjan Mohapatra" width="180" />
+</p>
+
 ---
 
 ### 🛡️ About Me
