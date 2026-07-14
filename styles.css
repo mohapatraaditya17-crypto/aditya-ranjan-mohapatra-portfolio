@@ -1265,6 +1265,20 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+.cert-verify-link {
+  color: var(--primary);
+  font-size: 13px;
+  transition: var(--transition-fast);
+  opacity: 0.75;
+  display: inline-block;
+}
+
+.cert-verify-link:hover {
+  color: var(--secondary) !important;
+  opacity: 1;
+  transform: translateY(-2px) scale(1.1);
+}
+
 /* ==========================================================================
    Scroll Animations
    ========================================================================== */

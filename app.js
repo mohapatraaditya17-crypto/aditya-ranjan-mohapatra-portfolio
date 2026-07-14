@@ -224,25 +224,53 @@ function initSkillsFilter() {
    ========================================================================== */
 function initCertifications() {
   const certsContainer = document.getElementById("certs-container");
+  const filterButtons = document.querySelectorAll("#certifications .filter-btn");
   if (!certsContainer) return;
 
-  const certsData = PORTFOLIO_DATA.certifications;
-  certsContainer.innerHTML = "";
+  const certs = PORTFOLIO_DATA.certifications;
 
-  certsData.forEach(cert => {
-    const card = document.createElement("div");
-    card.className = "cert-card scroll-reveal";
+  function renderCerts(categoryFilter = "all") {
+    certsContainer.innerHTML = "";
     
-    card.innerHTML = `
-      <div class="cert-icon"><i class="${cert.icon}"></i></div>
-      <div class="cert-details">
-        <h3>${cert.name}</h3>
-        <span class="cert-authority">${cert.authority}</span>
-        <span class="cert-period">${cert.period}</span>
-      </div>
-    `;
-    
-    certsContainer.appendChild(card);
+    const filteredCerts = categoryFilter === "all"
+      ? certs
+      : certs.filter(cert => cert.category === categoryFilter);
+
+    filteredCerts.forEach(cert => {
+      const card = document.createElement("div");
+      card.className = "cert-card scroll-reveal reveal-active";
+      
+      const linkHTML = cert.url && cert.url !== "#"
+        ? `<a href="${cert.url}" class="cert-verify-link" target="_blank" aria-label="Verify Certificate" style="color: var(--primary); transition: var(--transition-fast); margin-left: 8px;"><i class="fa-solid fa-up-right-from-square"></i></a>`
+        : "";
+
+      card.innerHTML = `
+        <div class="cert-icon"><i class="${cert.icon}"></i></div>
+        <div class="cert-details" style="flex-grow: 1;">
+          <h3>${cert.name}</h3>
+          <span class="cert-authority">${cert.authority}</span>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 6px;">
+            <span class="cert-period">${cert.period}</span>
+            ${linkHTML}
+          </div>
+        </div>
+      `;
+      
+      certsContainer.appendChild(card);
+    });
+  }
+
+  // Initial render
+  renderCerts();
+
+  // Attach filter click events
+  filterButtons.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      filterButtons.forEach(b => b.classList.remove("active"));
+      e.target.classList.add("active");
+      const filterValue = e.target.getAttribute("data-filter");
+      renderCerts(filterValue);
+    });
   });
 }
 

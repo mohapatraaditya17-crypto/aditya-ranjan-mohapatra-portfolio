@@ -52,14 +52,34 @@ const PORTFOLIO_DATA = {
   ],
 
   certifications: [
-    { name: "ISC2 Candidate", authority: "ISC2", period: "Mar 2026", icon: "fa-solid fa-user-shield" },
-    { name: "Fortinet Certified Fundamentals (FCF)", authority: "Fortinet", period: "Jul 2026", icon: "fa-solid fa-shield-halved" },
-    { name: "Falcon Platform Architecture (Falcon 100)", authority: "CrowdStrike University", period: "Jul 2026", icon: "fa-solid fa-network-wired" },
-    { name: "Falcon Platform Essentials (Falcon 101)", authority: "CrowdStrike University", period: "Jul 2026", icon: "fa-solid fa-sliders" },
-    { name: "Falcon Platform Onboarding (Falcon 102)", authority: "CrowdStrike University", period: "Jul 2026", icon: "fa-solid fa-laptop-code" },
-    { name: "Diploma in Digital Forensic Investigation", authority: "Alison", period: "Jul 2026", icon: "fa-solid fa-fingerprint" },
-    { name: "Introduction to Cybersecurity", authority: "Cisco Networking Academy", period: "Jul 2026", icon: "fa-solid fa-circle-nodes" },
-    { name: "Vulnerability Management (ITSEC 121)", authority: "CrowdStrike University", period: "Jul 2026", icon: "fa-solid fa-bug" }
+    // CrowdStrike (Falcon Platform & ITSEC)
+    { name: "FALCON 100: Falcon Platform Architecture Overview", authority: "CrowdStrike University", period: "Jul 2026", category: "crowdstrike", icon: "fa-solid fa-network-wired", url: "https://www.crowdstrike.com" },
+    { name: "FALCON 101: Falcon Platform Essentials", authority: "CrowdStrike University", period: "Jul 2026", category: "crowdstrike", icon: "fa-solid fa-sliders", url: "https://www.crowdstrike.com" },
+    { name: "FALCON 102: Falcon Platform Onboarding Configuration", authority: "CrowdStrike University", period: "Jul 2026", category: "crowdstrike", icon: "fa-solid fa-laptop-code", url: "https://www.crowdstrike.com" },
+    { name: "FALCON 104: Getting Started with Endpoint Security", authority: "CrowdStrike University", period: "Jul 2026", category: "crowdstrike", icon: "fa-solid fa-desktop", url: "https://www.crowdstrike.com" },
+    { name: "FALCON 105: Sensor Installation, Configuration and Troubleshooting", authority: "CrowdStrike University", period: "Jul 2026", category: "crowdstrike", icon: "fa-solid fa-screwdriver-wrench", url: "https://www.crowdstrike.com" },
+    { name: "FALCON 106: Customizing Dashboards in Falcon", authority: "CrowdStrike University", period: "Jul 2026", category: "crowdstrike", icon: "fa-solid fa-chart-pie", url: "https://www.crowdstrike.com" },
+    { name: "FALCON 107: Falcon Firewall Management Fundamentals", authority: "CrowdStrike University", period: "Jul 2026", category: "crowdstrike", icon: "fa-solid fa-shield-halved", url: "https://www.crowdstrike.com" },
+    { name: "Falcon Fusion SOAR Fundamentals (SOAR 100)", authority: "CrowdStrike University", period: "Jul 2026", category: "crowdstrike", icon: "fa-solid fa-network-wired", url: "https://www.crowdstrike.com" },
+    { name: "FALCON 160: Falcon for Mobile", authority: "CrowdStrike University", period: "Jul 2026", category: "crowdstrike", icon: "fa-solid fa-mobile-screen", url: "https://www.crowdstrike.com" },
+    { name: "ITSEC 121: Vulnerability Management Fundamentals", authority: "CrowdStrike University", period: "Jul 2026", category: "crowdstrike", icon: "fa-solid fa-bug", url: "https://www.crowdstrike.com" },
+    { name: "ITSEC 122: Asset Management Fundamentals", authority: "CrowdStrike University", period: "Jul 2026", category: "crowdstrike", icon: "fa-solid fa-box-archive", url: "https://www.crowdstrike.com" },
+    
+    // Cybersecurity & IT
+    { name: "ISC2 Candidate", authority: "ISC2", period: "Mar 2026", category: "cyber", icon: "fa-solid fa-user-shield", url: "https://www.isc2.org" },
+    { name: "Fortinet Certified Fundamentals (FCF)", authority: "Fortinet", period: "Jul 2026", category: "cyber", icon: "fa-solid fa-shield-halved", url: "https://www.fortinet.com" },
+    { name: "Introduction to the Threat Landscape 3.0", authority: "Fortinet", period: "Jul 2026", category: "cyber", icon: "fa-solid fa-network-wired", url: "https://www.fortinet.com" },
+    { name: "Getting Started in Cybersecurity 3.0", authority: "Fortinet", period: "Jul 2026", category: "cyber", icon: "fa-solid fa-circle-nodes", url: "https://www.fortinet.com" },
+    { name: "Introduction to Cybersecurity", authority: "Cisco Networking Academy", period: "Jul 2026", category: "cyber", icon: "fa-solid fa-circle-nodes", url: "https://www.netacad.com" },
+    { name: "AI in Cybersecurity: Vulnerability, Intelligence, Security, and Ethics", authority: "Alison", period: "Jul 2026", category: "cyber", icon: "fa-solid fa-robot", url: "https://alison.com" },
+    { name: "Internship Common Aptitude Test", authority: "Internship Studio", period: "Jul 2026", category: "cyber", icon: "fa-solid fa-clipboard-question", url: "#" },
+
+    // Forensic Science & Safety
+    { name: "Diploma in Digital Forensic Investigation", authority: "Alison", period: "Jul 2026", category: "forensics", icon: "fa-solid fa-fingerprint", url: "https://alison.com" },
+    { name: "Four-Legged Detectives: The Mastery of Cadaver Dogs", authority: "C.A.S.E. 23 OFFICIAL", period: "Jul 2026", category: "forensics", icon: "fa-solid fa-dog", url: "#" },
+    { name: "Diploma in Fire Safety", authority: "Alison", period: "Jul 2026", category: "forensics", icon: "fa-solid fa-fire-extinguisher", url: "https://alison.com" },
+    { name: "EHS Guidelines - Environment, Health and Safety", authority: "Alison", period: "Jul 2026", category: "forensics", icon: "fa-solid fa-helmet-safety", url: "https://alison.com" },
+    { name: "Food Safety and Hygiene in the Catering Industry", authority: "Alison", period: "Jul 2026", category: "forensics", icon: "fa-solid fa-utensils", url: "https://alison.com" }
   ],
 
   projects: [
