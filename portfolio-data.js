@@ -5,12 +5,12 @@ const PORTFOLIO_DATA = {
     title: "Security Engineer & Forensic Scientist",
     subtitle: "Securing Endpoints | Threat Hunting | Forensic Investigation",
     bio: "I am a Security Engineer specializing in endpoint security, deployment, and configuration of CrowdStrike Falcon across enterprise environments. Alongside cybersecurity, I hold a strong foundation in Forensic Science, specializing in Forensic Medicine, Toxicology, and Crime Scene Investigation. I leverage this dual-domain expertise to approach security challenges with an analytical, investigative mindset—bridging digital forensics with physical evidence analysis.",
-    avatarUrl: "./assets/avatar.jpg",
+    avatarUrl: "./assets/avatar.png",
     email: "mohapatraaditya17@gmail.com",
-    githubUrl: "https://github.com/mohapatraaditya17-crypto",
+    githubUrl: "https://github.com/mohapatraaditya17-crypto", 
     linkedinUrl: "https://in.linkedin.com/in/aditya-ranjan-mohapatra",
     twitterUrl: "#", 
-    resumeUrl: "#" // Link to your resume PDF if desired
+    resumeUrl: "#" 
   },
   
   roles: [
@@ -51,45 +51,56 @@ const PORTFOLIO_DATA = {
     { name: "CrowdStrike Falcon", category: "tools", icon: "fas fa-shield-halved" }
   ],
 
+  certifications: [
+    { name: "ISC2 Candidate", authority: "ISC2", period: "Mar 2026", icon: "fa-solid fa-user-shield" },
+    { name: "Fortinet Certified Fundamentals (FCF)", authority: "Fortinet", period: "Jul 2026", icon: "fa-solid fa-shield-halved" },
+    { name: "Falcon Platform Architecture (Falcon 100)", authority: "CrowdStrike University", period: "Jul 2026", icon: "fa-solid fa-network-wired" },
+    { name: "Falcon Platform Essentials (Falcon 101)", authority: "CrowdStrike University", period: "Jul 2026", icon: "fa-solid fa-sliders" },
+    { name: "Falcon Platform Onboarding (Falcon 102)", authority: "CrowdStrike University", period: "Jul 2026", icon: "fa-solid fa-laptop-code" },
+    { name: "Diploma in Digital Forensic Investigation", authority: "Alison", period: "Jul 2026", icon: "fa-solid fa-fingerprint" },
+    { name: "Introduction to Cybersecurity", authority: "Cisco Networking Academy", period: "Jul 2026", icon: "fa-solid fa-circle-nodes" },
+    { name: "Vulnerability Management (ITSEC 121)", authority: "CrowdStrike University", period: "Jul 2026", icon: "fa-solid fa-bug" }
+  ],
+
   projects: [
     {
       id: 1,
       title: "AI SOC Copilot for CrowdStrike",
       description: "An innovative project integrating LLMs with the CrowdStrike Falcon Platform via FalconPy to automate security workflows. Features natural language querying of endpoints, automated event triage, AI-assisted IOC analysis, and SOC report generation.",
-      image: "./assets/project-lumina.png", // Will use AI-themed graphic
+      image: "./assets/project-lumina.png", 
       tags: ["Python", "LLMs / RAG", "CrowdStrike API", "FalconPy"],
       category: "ai",
-      github: "https://github.com",
+      github: "https://github.com/mohapatraaditya17-crypto",
       live: "https://in.linkedin.com/in/aditya-ranjan-mohapatra"
     },
     {
       id: 2,
       title: "CrowdStrike API Operations Suite",
       description: "Engineered a programmatic cybersecurity operations tool using the CrowdStrike API and Python falconpy SDK. Replaces manual audits by tracking prevention policy drift, Reduced Functionality Mode detection, and RBAC governance logging.",
-      image: "./assets/project-devflow.png", // Will use dev dashboard graphic
+      image: "./assets/project-devflow.png", 
       tags: ["Python", "FalconPy", "Pandas", "OAuth2 API"],
       category: "security",
-      github: "https://github.com",
+      github: "https://github.com/mohapatraaditya17-crypto",
       live: "https://in.linkedin.com/in/aditya-ranjan-mohapatra"
     },
     {
       id: 3,
       title: "Device Control & Prevention Policy Testing",
       description: "Designed and executed controlled testing and validation of CrowdStrike Falcon Device Control and Prevention Policies. Evaluated USB peripheral blocking, malware containment, and ransomware prevention across Windows endpoints.",
-      image: "./assets/project-gitguard.png", // Will use security CLI graphic
+      image: "./assets/project-gitguard.png", 
       tags: ["EDR Testing", "Device Control", "Prevention Policies", "Win Security"],
       category: "security",
-      github: "https://github.com",
+      github: "https://github.com/mohapatraaditya17-crypto",
       live: "https://in.linkedin.com/in/aditya-ranjan-mohapatra"
     },
     {
       id: 4,
       title: "Forensic Assessment of Drinking Water Quality",
       description: "A multidisciplinary environmental forensic investigation evaluating heavy metal (Chromium, Nickel) contamination and physicochemical profiles in drinking water at Bilaspur Station using Atomic Absorption Spectroscopy (AAS) and spectrophotometry.",
-      image: "./assets/project-zenith.png", // Will use analysis graphic
+      image: "./assets/project-zenith.png", 
       tags: ["Forensics", "Atomic Spectroscopy", "Toxicology", "APHA Standards"],
       category: "forensics",
-      github: "https://github.com",
+      github: "https://github.com/mohapatraaditya17-crypto",
       live: "https://in.linkedin.com/in/aditya-ranjan-mohapatra"
     },
     {
@@ -99,7 +110,7 @@ const PORTFOLIO_DATA = {
       image: "./assets/project-gitguard.png", 
       tags: ["Machine Learning", "Deep Learning", "LSTM Networks", "Malware Analysis"],
       category: "ai",
-      github: "https://github.com",
+      github: "https://github.com/mohapatraaditya17-crypto",
       live: "https://in.linkedin.com/in/aditya-ranjan-mohapatra"
     }
   ],
@@ -109,49 +120,55 @@ const PORTFOLIO_DATA = {
       period: "May 2026 - Present",
       title: "Security Engineer L1",
       company: "ITPeopleNetwork (ITPN Consulting)",
-      description: "Specializing in endpoint security engineering. Primary focus on deploying, configuring, and managing CrowdStrike Falcon sensors across enterprise environments. Configuring policy rules, onboarding assets, and analyzing endpoint protection status."
+      description: "Specializing in enterprise endpoint security engineering. Primary responsibilities include deploying, configuring, and managing CrowdStrike Falcon sensors across corporate networks. Actively configuring security prevention policies, onboarding new assets, executing migrations to the Falcon Console and Microsoft Intune, and designing robust detection engineering rules to protect infrastructure."
     },
     {
       period: "Jan 2026 - Present",
       title: "Content Developer & Founding Board Member",
       company: "Sure Clue Scientific Solutions",
-      description: "Preparing academic content, study materials, and technical presentations in Forensic Science. Driving scientific research initiatives and forensic training consulting."
+      description: "Preparing academic content, study materials, and technical presentations in Forensic Science. Researching toxicological profiles, questioned documents, and guiding forensic science educational courses."
     },
     {
       period: "Feb 2026 - Apr 2026",
       title: "Trainee Security Engineer",
       company: "ITPeopleNetwork",
-      description: "Trained in endpoint security administration, sensor installation, configuration, prevention policies tuning, and endpoint troubleshooting workflows."
+      description: "Underwent rigorous hands-on training in security operations, endpoint protection, and platform essentials. Maintained sensor configurations, debugged installation issues, configured policies, and validated security rules."
     },
     {
       period: "Jan 2026 - Feb 2026",
       title: "Certified SOC Analyst Intern",
       company: "CFSS Cyber & Forensics Security Solutions",
-      description: "Participated in security operations training, event log analysis, and incident correlation. Refined skills in identifying and responding to digital threat events."
+      description: "Trained in security operations center workflows. Analyzed event logs, aligned alerts with the MITRE ATT&CK framework, correlated digital telemetry, and studied active incident mitigation strategies."
     },
     {
       period: "Jun 2025 - Jun 2025",
       title: "Forensic Intern",
       company: "Regional Forensic Science Laboratory Bilaspur",
-      description: "Assisted Scientific Officers in the Toxicology and Biology divisions. Handled documentation and examination of physical, biological, and chemical evidence, maintaining strict chain of custody."
+      description: "Supported the scientific officer on-site within the Toxicology and Biology divisions. Handled forensic documentation, collected evidence, maintained strict chain of custody, and utilized laboratory methodologies to analyze toxicological samples in crime investigations."
     },
     {
       period: "Jun 2024 - Mar 2025",
       title: "SOC Trainee & Intern",
       company: "Cache Digital Solutions Pvt. Ltd.",
-      description: "Trained in Security Information and Event Management (SIEM) operations, log analytics, real-time threat monitoring, event correlation, and cybersecurity Incident Response (IR) protocols."
+      description: "Trained in SIEM management, log correlation, real-time alert triage, and incident response workflows. Monitored network traffic events, created dashboards, and documented threat vectors."
+    },
+    {
+      period: "Aug 2023 - Jan 2024",
+      title: "Lecturer (Teaching Faculty)",
+      company: "Indtech Educational and Technical Institute",
+      description: "Educated students on occupational safety regulations, fire protection regulations, and risk assessment (NFPA, OSHA, ISO 45001, and ISO 14001 compliance). Developed case studies on industrial accident root-cause analysis and led practical workshops on hazardous material handling."
     },
     {
       period: "2024 - 2026",
       title: "M.Sc. in Forensic Science",
       company: "Guru Ghasidas Vishwavidyalaya, Bilaspur",
-      description: "Master of Science postgraduation focusing on forensic toxicology, biology, questioned document analysis, and crime scene investigation. Qualified UGC NET (June 2025) in Forensic Sciences."
+      description: "Postgraduate degree focusing on questioned documents, forensic biology/serology, and chemical toxicology. Conducted heavy metals atomic spectroscopy research. Qualified UGC NET (June 2025) in Forensic Sciences."
     },
     {
       period: "2020 - 2023",
       title: "B.Sc. in Forensic Science",
       company: "Centurion University of Technology and Management",
-      description: "Bachelor of Science degree covering criminology, forensics chemistry, ballistics, and investigative biology. Active member in crime scene reconstruction and sports (Kabaddi)."
+      description: "Undergraduate degree. Active in crime scene investigation simulations, forensics laboratory techniques, and sports."
     }
   ]
 };

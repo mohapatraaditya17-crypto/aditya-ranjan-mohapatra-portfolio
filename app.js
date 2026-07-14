@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initHeaderScroll();
   initMobileNav();
   initSkillsFilter();
+  initCertifications();
   initProjectsFilter();
   initTimeline();
   initContactForm();
@@ -208,6 +209,33 @@ function initSkillsFilter() {
       const filterValue = e.target.getAttribute("data-filter");
       renderSkills(filterValue);
     });
+  });
+}
+
+/* ==========================================================================
+   Certifications Rendering
+   ========================================================================== */
+function initCertifications() {
+  const certsContainer = document.getElementById("certs-container");
+  if (!certsContainer) return;
+
+  const certsData = PORTFOLIO_DATA.certifications;
+  certsContainer.innerHTML = "";
+
+  certsData.forEach(cert => {
+    const card = document.createElement("div");
+    card.className = "cert-card scroll-reveal";
+    
+    card.innerHTML = `
+      <div class="cert-icon"><i class="${cert.icon}"></i></div>
+      <div class="cert-details">
+        <h3>${cert.name}</h3>
+        <span class="cert-authority">${cert.authority}</span>
+        <span class="cert-period">${cert.period}</span>
+      </div>
+    `;
+    
+    certsContainer.appendChild(card);
   });
 }
 

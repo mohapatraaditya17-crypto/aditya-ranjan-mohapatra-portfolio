@@ -25,10 +25,6 @@
 > 🛡️ **Investigator by Education, Defender by Profession.**
 > I bridge traditional physical sciences with modern cybersecurity. As a Security Engineer, I deploy and automate CrowdStrike Falcon across enterprise environments while using a forensic mindset to dissect threat paths and alert telemetry.
 
-<p align="center">
-  <img src="avatar.jpg" alt="Aditya Ranjan Mohapatra" width="160" />
-</p>
-
 ---
 
 ### 🛡️ Core Areas of Focus

@@ -1193,6 +1193,79 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
+   Certifications Section
+   ========================================================================== */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.cert-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: var(--transition-smooth);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(181, 123, 238, 0.3); /* Purple hover accent */
+  box-shadow: 0 12px 30px -10px rgba(181, 123, 238, 0.15);
+  background-color: var(--bg-card-hover);
+}
+
+.cert-icon {
+  width: 54px;
+  height: 54px;
+  background-color: rgba(100, 255, 218, 0.08);
+  border: 1px solid rgba(100, 255, 218, 0.15);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-size: 24px;
+  flex-shrink: 0;
+  transition: var(--transition-fast);
+}
+
+.cert-card:hover .cert-icon {
+  color: var(--secondary);
+  background-color: rgba(181, 123, 238, 0.08);
+  border-color: rgba(181, 123, 238, 0.15);
+  transform: scale(1.05);
+}
+
+.cert-details h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--text-heading);
+  line-height: 1.2;
+}
+
+.cert-authority {
+  font-size: 13px;
+  color: var(--text-light);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.cert-period {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-body);
+  display: block;
+}
+
+/* ==========================================================================
    Scroll Animations
    ========================================================================== */
 .scroll-reveal {
