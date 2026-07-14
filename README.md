@@ -66,8 +66,8 @@ What makes my approach unique is my background in **Forensic Science** (speciali
 ### 📈 GitHub Statistics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=aditya-ranjan-mohapatra&show_icons=true&theme=tokyonight&count_private=true" alt="Aditya's GitHub Stats" height="195px" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aditya-ranjan-mohapatra&layout=compact&theme=tokyonight" alt="Top Languages" height="195px" />
+  <img src="https://github-readme-stats.vercel.app/api?username=mohapatraaditya17-crypto&show_icons=true&theme=tokyonight&count_private=true" alt="Aditya's GitHub Stats" height="195px" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohapatraaditya17-crypto&layout=compact&theme=tokyonight" alt="Top Languages" height="195px" />
 </p>
 
 ---
