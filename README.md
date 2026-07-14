@@ -53,8 +53,8 @@
 ### 📈 GitHub Stats & Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mohapatraaditya17-crypto&show_icons=true&theme=tokyonight&count_private=true" alt="Aditya's GitHub Stats" height="195px" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohapatraaditya17-crypto&layout=compact&theme=tokyonight" alt="Top Languages" height="195px" />
+  <img src="https://github-readme-stats.shion.dev/api?username=mohapatraaditya17-crypto&show_icons=true&theme=tokyonight&count_private=true" alt="Aditya's GitHub Stats" height="195px" />
+  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=mohapatraaditya17-crypto&layout=compact&theme=tokyonight" alt="Top Languages" height="195px" />
 </p>
 
 <p align="center">
