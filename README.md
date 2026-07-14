@@ -59,6 +59,46 @@
 
 ---
 
+### 🏆 Certifications & Credentials
+
+<details>
+<summary><b>Click to expand the full list of 22+ professional credentials</b></summary>
+<br/>
+
+#### 🛡️ CrowdStrike Falcon Platform
+*   **FALCON 100: Falcon Platform Architecture Overview** — *CrowdStrike University* (ID: C648037)
+*   **FALCON 101: Falcon Platform Essentials** — *CrowdStrike University* (ID: C648053)
+*   **FALCON 102: Falcon Platform Onboarding Configuration** — *CrowdStrike University* (ID: C648136)
+*   **FALCON 104: Getting Started with Endpoint Security** — *CrowdStrike University* (ID: C648160)
+*   **FALCON 105: Sensor Installation, Configuration and Troubleshooting** — *CrowdStrike University* (ID: C648202)
+*   **FALCON 106: Customizing Dashboards in Falcon** — *CrowdStrike University* (ID: C648253)
+*   **FALCON 107: Falcon Firewall Management Fundamentals** — *CrowdStrike University* (ID: C648266)
+*   **Falcon Fusion SOAR Fundamentals (SOAR 100)** — *CrowdStrike University*
+*   **FALCON 160: Falcon for Mobile** — *CrowdStrike University* (ID: C648289)
+*   **ITSEC 121: Vulnerability Management Fundamentals** — *CrowdStrike University* (ID: C648351)
+*   **ITSEC 122: Asset Management Fundamentals** — *CrowdStrike University* (ID: C648358)
+
+#### 💻 Cybersecurity & IT
+*   **ISC2 Candidate** — *ISC2* (ID: ISC2-Candidate)
+*   **Fortinet Certified Fundamentals** — *Fortinet* (ID: 6944259184AR)
+*   **Introduction to the Threat Landscape 3.0** — *Fortinet*
+*   **Getting Started in Cybersecurity 3.0** — *Fortinet*
+*   **Introduction to Cybersecurity** — *Cisco*
+*   **Introduction to Cybersecurity** — *Cisco Networking Academy* (ID: e0fd0b51-600f-48ce-98ea-00f089608bf8)
+*   **AI in Cybersecurity: Vulnerability, Intelligence, Security, and Ethics** — *Alison* (ID: 7359-42402669)
+*   **Internship Common Aptitude Test** — *Internship Studio* (ID: CIT-P-2812367)
+
+#### 🧪 Forensic Science & Safety
+*   **Diploma in Digital Forensic Investigation** — *Alison* (ID: 4795-42402669)
+*   **Four - Legged detectives: The Mastery of Cadaver Dogs** — *C.A.S.E. 23 OFFICIAL* (ID: CASE/GL-12/08)
+*   **Diploma in Fire Safety** — *Alison* (ID: 6071-42402669)
+*   **EHS Guidelines - Environment, Health and Safety** — *Alison* (ID: 5382-42402669)
+*   **Food Safety and Hygiene in the Catering Industry** — *Alison* (ID: 1363-42402669)
+
+</details>
+
+---
+
 ### 💼 Get In Touch
 
 *   **LinkedIn**: Connect with me on [LinkedIn](https://in.linkedin.com/in/aditya-ranjan-mohapatra).

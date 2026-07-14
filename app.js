@@ -244,11 +244,16 @@ function initCertifications() {
         ? `<a href="${cert.url}" class="cert-verify-link" target="_blank" aria-label="Verify Certificate" style="color: var(--primary); transition: var(--transition-fast); margin-left: 8px;"><i class="fa-solid fa-up-right-from-square"></i></a>`
         : "";
 
+      const licenseHTML = cert.license
+        ? `<span class="cert-license" style="font-size: 11px; color: var(--text-light); display: block; margin-top: 2px;">Credential ID: ${cert.license}</span>`
+        : "";
+
       card.innerHTML = `
         <div class="cert-icon"><i class="${cert.icon}"></i></div>
         <div class="cert-details" style="flex-grow: 1;">
           <h3>${cert.name}</h3>
           <span class="cert-authority">${cert.authority}</span>
+          ${licenseHTML}
           <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 6px;">
             <span class="cert-period">${cert.period}</span>
             ${linkHTML}
