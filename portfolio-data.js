@@ -127,7 +127,7 @@ const PORTFOLIO_DATA = {
       id: 5,
       title: "Automatic Malware Detection with LSTM",
       description: "A research project analyzing deep learning (LSTM) and machine learning models for detecting polymorphic malware. Explores dataset limitations, adversarial evasion, and Explainable AI (XAI) models in cyber defense.",
-      image: "./assets/project-gitguard.png", 
+      image: "./assets/project-lstm.png", 
       tags: ["Machine Learning", "Deep Learning", "LSTM Networks", "Malware Analysis"],
       category: "ai",
       github: "https://github.com/mohapatraaditya17-crypto",
