@@ -28,9 +28,11 @@
   
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- LinkedIn Badge SDK -->
+  <script src="https://platform.linkedin.com/badges/js/profile.js" type="text/javascript" async defer></script>
 </head>
 <body>
   <!-- Glowing Background Orbs -->
@@ -40,8 +42,9 @@
   <!-- Header & Navigation -->
   <header class="site-header" id="site-header">
     <div class="container nav-container">
-      <a href="#hero" class="logo" id="nav-logo">
-        <span class="logo-accent">&lt;</span>ARM<span class="logo-accent"> /&gt;</span>
+      <a href="#hero" class="logo" id="nav-logo" style="display: flex; align-items: center; gap: 10px;">
+        <img src="./assets/avatar.jpg" alt="Aditya Ranjan Mohapatra" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--primary); display: inline-block;">
+        <span class="logo-text"><span class="logo-accent">&lt;</span>ARM<span class="logo-accent"> /&gt;</span></span>
       </a>
       
       <!-- Desktop Navigation -->
@@ -82,7 +85,7 @@
         <div class="hero-content">
           <span class="hero-greeting" id="hero-greeting">Hi, my name is</span>
           <h1 class="hero-title" id="hero-name">Aditya Ranjan Mohapatra</h1>
-          <h2 class="hero-subtitle">I am a <span id="typewriter" class="text-gradient"></span><span class="cursor">|</span></h2>
+          <h2 class="hero-subtitle" style="display: flex; align-items: center; flex-wrap: wrap;">I am <span class="role-box"><span id="typewriter" class="text-gradient"></span><span class="cursor">|</span></span></h2>
           <p class="hero-description" id="hero-bio">
             Security Engineer specializing in endpoint protection and CrowdStrike Falcon, with a solid background in Forensic Science.
           </p>
@@ -92,8 +95,10 @@
           </div>
         </div>
         <div class="hero-visual">
-          <div class="profile-image-container">
-            <img src="./assets/avatar.png" alt="Aditya Ranjan Mohapatra's profile picture" class="profile-image" id="profile-img">
+          <div class="hero-badge-container">
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="aditya-ranjan-mohapatra" data-version="v1">
+              <a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/aditya-ranjan-mohapatra?trk=profile-badge">Aditya Ranjan Mohapatra</a>
+            </div>
             <div class="profile-glow"></div>
           </div>
         </div>

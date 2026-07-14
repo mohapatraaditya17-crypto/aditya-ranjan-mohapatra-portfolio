@@ -20,6 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
   initTimeline();
   initContactForm();
   initScrollReveal();
+
+  // Render LinkedIn Badge after a short delay to guarantee dynamic iframe generation
+  setTimeout(() => {
+    if (typeof LIRenderAll === "function") {
+      LIRenderAll();
+    }
+  }, 500);
 });
 
 /* ==========================================================================
