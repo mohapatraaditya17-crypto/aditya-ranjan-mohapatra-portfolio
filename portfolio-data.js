@@ -5,7 +5,7 @@ const PORTFOLIO_DATA = {
     title: "Security Engineer & Forensic Scientist",
     subtitle: "Securing Endpoints | Threat Hunting | Forensic Investigation",
     bio: "I am a Security Engineer specializing in endpoint security, deployment, and configuration of CrowdStrike Falcon across enterprise environments. Alongside cybersecurity, I hold a strong foundation in Forensic Science, specializing in Forensic Medicine, Toxicology, and Crime Scene Investigation. I leverage this dual-domain expertise to approach security challenges with an analytical, investigative mindset—bridging digital forensics with physical evidence analysis.",
-    avatarUrl: "./assets/avatar.png",
+    avatarUrl: "./assets/avatar.jpg",
     email: "mohapatraaditya17@gmail.com",
     githubUrl: "https://github.com/mohapatraaditya17-crypto",
     linkedinUrl: "https://in.linkedin.com/in/aditya-ranjan-mohapatra",
