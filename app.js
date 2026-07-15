@@ -244,6 +244,10 @@ function initCertifications() {
         ? `<a href="${cert.url}" class="cert-verify-link" target="_blank" aria-label="Verify Certificate" style="color: var(--primary); transition: var(--transition-fast); margin-left: 8px;"><i class="fa-solid fa-up-right-from-square"></i></a>`
         : "";
 
+      const mediaHTML = cert.media
+        ? `<button class="cert-view-btn" data-media="${cert.media}" data-title="${cert.name}" aria-label="View Certificate File" style="background: none; border: none; color: var(--primary); cursor: pointer; transition: var(--transition-fast); margin-left: 8px; font-size: 13px; padding: 0;"><i class="fa-solid fa-eye"></i></button>`
+        : "";
+
       const licenseHTML = cert.license
         ? `<span class="cert-license" style="font-size: 11px; color: var(--text-light); display: block; margin-top: 2px;">Credential ID: ${cert.license}</span>`
         : "";
@@ -256,7 +260,10 @@ function initCertifications() {
           ${licenseHTML}
           <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 6px;">
             <span class="cert-period">${cert.period}</span>
-            ${linkHTML}
+            <div class="cert-actions" style="display: flex; align-items: center; gap: 10px;">
+              ${mediaHTML}
+              ${linkHTML}
+            </div>
           </div>
         </div>
       `;
@@ -277,6 +284,72 @@ function initCertifications() {
       renderCerts(filterValue);
     });
   });
+
+  // Modal DOM elements and handlers
+  const modal = document.getElementById("cert-modal");
+  const modalTitle = document.getElementById("modal-title");
+  const modalMediaContent = document.getElementById("modal-media-content");
+  const modalClose = document.getElementById("modal-close");
+  const modalOverlay = document.getElementById("modal-overlay");
+
+  if (modal && modalClose && modalOverlay) {
+    // Function to open modal
+    window.openCertModal = function(mediaPath, title) {
+      modalTitle.textContent = title;
+      modalMediaContent.innerHTML = "";
+
+      if (mediaPath.endsWith(".pdf")) {
+        // Embed PDF
+        const embed = document.createElement("iframe");
+        embed.src = mediaPath;
+        embed.style.width = "100%";
+        embed.style.height = "100%";
+        embed.style.border = "none";
+        modalMediaContent.appendChild(embed);
+      } else {
+        // Render Image
+        const img = document.createElement("img");
+        img.src = mediaPath;
+        img.alt = title;
+        img.style.maxWidth = "100%";
+        img.style.maxHeight = "100%";
+        img.style.objectFit = "contain";
+        modalMediaContent.appendChild(img);
+      }
+
+      modal.classList.add("active");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden"; // Prevent background scrolling
+    };
+
+    // Function to close modal
+    function closeCertModal() {
+      modal.classList.remove("active");
+      modal.setAttribute("aria-hidden", "true");
+      modalMediaContent.innerHTML = "";
+      document.body.style.overflow = "";
+    }
+
+    modalClose.addEventListener("click", closeCertModal);
+    modalOverlay.addEventListener("click", closeCertModal);
+
+    // Close on ESC key
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && modal.classList.contains("active")) {
+        closeCertModal();
+      }
+    });
+
+    // Delegate click events for dynamically rendered view buttons
+    certsContainer.addEventListener("click", (e) => {
+      const viewBtn = e.target.closest(".cert-view-btn");
+      if (viewBtn) {
+        const media = viewBtn.getAttribute("data-media");
+        const title = viewBtn.getAttribute("data-title");
+        window.openCertModal(media, title);
+      }
+    });
+  }
 }
 
 /* ==========================================================================

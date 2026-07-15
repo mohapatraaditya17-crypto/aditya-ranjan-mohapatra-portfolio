@@ -51,34 +51,304 @@ const PORTFOLIO_DATA = {
     { name: "CrowdStrike Falcon", category: "tools", icon: "fas fa-shield-halved" }
   ],  certifications: [
     // CrowdStrike (Falcon Platform & ITSEC)
-    { name: "FALCON 100: Falcon Platform Architecture Overview", authority: "CrowdStrike University", period: "Jul 2026", license: "C648037", category: "crowdstrike", icon: "fa-solid fa-network-wired", url: "https://www.crowdstrike.com" },
-    { name: "FALCON 101: Falcon Platform Essentials", authority: "CrowdStrike University", period: "Jul 2026", license: "C648053", category: "crowdstrike", icon: "fa-solid fa-sliders", url: "https://www.crowdstrike.com" },
-    { name: "FALCON 102: Falcon Platform Onboarding Configuration", authority: "CrowdStrike University", period: "Jul 2026", license: "C648136", category: "crowdstrike", icon: "fa-solid fa-laptop-code", url: "https://www.crowdstrike.com" },
-    { name: "FALCON 104: Getting Started with Endpoint Security", authority: "CrowdStrike University", period: "Jul 2026", license: "C648160", category: "crowdstrike", icon: "fa-solid fa-desktop", url: "https://www.crowdstrike.com" },
-    { name: "FALCON 105: Sensor Installation, Configuration and Troubleshooting", authority: "CrowdStrike University", period: "Jul 2026", license: "C648202", category: "crowdstrike", icon: "fa-solid fa-screwdriver-wrench", url: "https://www.crowdstrike.com" },
-    { name: "FALCON 106: Customizing Dashboards in Falcon", authority: "CrowdStrike University", period: "Jul 2026", license: "C648253", category: "crowdstrike", icon: "fa-solid fa-chart-pie", url: "https://www.crowdstrike.com" },
-    { name: "FALCON 107: Falcon Firewall Management Fundamentals", authority: "CrowdStrike University", period: "Jul 2026", license: "C648266", category: "crowdstrike", icon: "fa-solid fa-shield-halved", url: "https://www.crowdstrike.com" },
-    { name: "Falcon Fusion SOAR Fundamentals (SOAR 100)", authority: "CrowdStrike University", period: "Jul 2026", license: "", category: "crowdstrike", icon: "fa-solid fa-network-wired", url: "https://www.crowdstrike.com" },
-    { name: "FALCON 160: Falcon for Mobile", authority: "CrowdStrike University", period: "Jul 2026", license: "C648289", category: "crowdstrike", icon: "fa-solid fa-mobile-screen", url: "https://www.crowdstrike.com" },
-    { name: "ITSEC 121: Vulnerability Management Fundamentals", authority: "CrowdStrike University", period: "Jul 2026", license: "C648351", category: "crowdstrike", icon: "fa-solid fa-bug", url: "https://www.crowdstrike.com" },
-    { name: "ITSEC 122: Asset Management Fundamentals", authority: "CrowdStrike University", period: "Jul 2026", license: "C648358", category: "crowdstrike", icon: "fa-solid fa-box-archive", url: "https://www.crowdstrike.com" },
+    {
+      name: "FALCON 100: Falcon Platform Architecture Overview",
+      authority: "CrowdStrike University",
+      period: "Jul 2026",
+      license: "C648037",
+      category: "crowdstrike",
+      icon: "fa-solid fa-network-wired",
+      url: "https://university.crowdstrike.com/learn/courses/489/falcon-100-falcon-platform-architecture-overview",
+      media: "./assets/certs/489_3_629099_1783596344_CrowdStrike University Course Certificate.pdf"
+    },
+    {
+      name: "FALCON 101: Falcon Platform Essentials",
+      authority: "CrowdStrike University",
+      period: "Jul 2026",
+      license: "C648053",
+      category: "crowdstrike",
+      icon: "fa-solid fa-sliders",
+      url: "https://university.crowdstrike.com/learn/courses/468/falcon-101-falcon-platform-technical-fundamentals",
+      media: "./assets/certs/468_3_629099_1783597843_CrowdStrike University Course Certificate.pdf"
+    },
+    {
+      name: "FALCON 102: Falcon Platform Onboarding Configuration",
+      authority: "CrowdStrike University",
+      period: "Jul 2026",
+      license: "C648136",
+      category: "crowdstrike",
+      icon: "fa-solid fa-laptop-code",
+      url: "https://university.crowdstrike.com/learn/courses/472/falcon-102-falcon-platform-onboarding-configuration",
+      media: "./assets/certs/472_3_629099_1783603391_CrowdStrike University Course Certificate.pdf"
+    },
+    {
+      name: "FALCON 104: Getting Started with Endpoint Security",
+      authority: "CrowdStrike University",
+      period: "Jul 2026",
+      license: "C648160",
+      category: "crowdstrike",
+      icon: "fa-solid fa-desktop",
+      url: "https://university.crowdstrike.com/learn/courses/469/falcon-104-getting-started-with-the-endpoint-security-module",
+      media: "./assets/certs/469_3_629099_1783604595_CrowdStrike University Course Certificate.pdf"
+    },
+    {
+      name: "FALCON 105: Sensor Installation, Configuration and Troubleshooting",
+      authority: "CrowdStrike University",
+      period: "Jul 2026",
+      license: "C648202",
+      category: "crowdstrike",
+      icon: "fa-solid fa-screwdriver-wrench",
+      url: "https://university.crowdstrike.com/learn/courses/469/falcon-104-getting-started-with-the-endpoint-security-module",
+      media: "./assets/certs/469_3_629099_1783604595_CrowdStrike University Course Certificate.pdf"
+    },
+    {
+      name: "FALCON 106: Customizing Dashboards in Falcon",
+      authority: "CrowdStrike University",
+      period: "Jul 2026",
+      license: "C648253",
+      category: "crowdstrike",
+      icon: "fa-solid fa-chart-pie",
+      url: "https://university.crowdstrike.com/learn/courses/541/falcon-106-customizable-dashboards",
+      media: "./assets/certs/541_3_629099_1783608637_CrowdStrike University Course Certificate.pdf"
+    },
+    {
+      name: "Falcon 107: Falcon Firewall management Fundamentals",
+      authority: "CrowdStrike University",
+      period: "Jul 2026",
+      license: "C648266",
+      category: "crowdstrike",
+      icon: "fa-solid fa-shield-halved",
+      url: "https://university.crowdstrike.com/learn/courses/533/falcon-107-falcon-firewall-management-fundamentals",
+      media: "./assets/certs/533_3_629099_1783609224_CrowdStrike University Course Certificate.pdf"
+    },
+    {
+      name: "FALCON 160: Falcon for Mobile",
+      authority: "CrowdStrike University",
+      period: "Jul 2026",
+      license: "C648289",
+      category: "crowdstrike",
+      icon: "fa-solid fa-mobile-screen",
+      url: "https://university.crowdstrike.com/learn/courses/531/falcon-160-falcon-for-mobile",
+      media: "./assets/certs/531_3_629099_1783610766_CrowdStrike University Course Certificate.pdf"
+    },
+    {
+      name: "ITSEC 121: Vulnerability Management Fundamentals",
+      authority: "CrowdStrike University",
+      period: "Jul 2026",
+      license: "C648351",
+      category: "crowdstrike",
+      icon: "fa-solid fa-bug",
+      url: "https://university.crowdstrike.com/learn/courses/456/itsec-121-vulnerability-management-fundamentals",
+      media: "./assets/certs/456_3_629099_1783613730_CrowdStrike University Course Certificate.pdf"
+    },
+    {
+      name: "ITSEC 122: Asset Management Fundamentals",
+      authority: "CrowdStrike University",
+      period: "Jul 2026",
+      license: "C648358",
+      category: "crowdstrike",
+      icon: "fa-solid fa-box-archive",
+      url: "https://university.crowdstrike.com/learn/courses/457/itsec-122-asset-management-fundamentals",
+      media: "./assets/certs/457_3_629099_1783614324_CrowdStrike University Course Certificate.pdf"
+    },
+    {
+      name: "FALCON 141: Charlotte AI Fundamentals",
+      authority: "CrowdStrike University",
+      period: "Jul 2026",
+      license: "C654160",
+      category: "crowdstrike",
+      icon: "fa-solid fa-robot",
+      url: "https://university.crowdstrike.com/lms/index.php?r=myActivities/downloadCertificate&course_id=1513&id_user=629099",
+      media: "./assets/certs/1513_3_629099_1784114165_CrowdStrike University Course Certificate.pdf"
+    },
     
     // Cybersecurity & IT
-    { name: "ISC2 Candidate", authority: "ISC2", period: "Mar 2026", license: "ISC2-Candidate", category: "cyber", icon: "fa-solid fa-user-shield", url: "https://www.isc2.org" },
-    { name: "Fortinet Certified Fundamentals", authority: "Fortinet", period: "Jul 2026", license: "6944259184AR", category: "cyber", icon: "fa-solid fa-shield-halved", url: "https://www.fortinet.com" },
-    { name: "Introduction to the Threat Landscape 3.0", authority: "Fortinet", period: "Jul 2026", license: "", category: "cyber", icon: "fa-solid fa-network-wired", url: "https://www.fortinet.com" },
-    { name: "Getting Started in Cybersecurity 3.0", authority: "Fortinet", period: "Jul 2026", license: "", category: "cyber", icon: "fa-solid fa-circle-nodes", url: "https://www.fortinet.com" },
-    { name: "Introduction to Cybersecurity", authority: "Cisco", period: "Jul 2026", license: "", category: "cyber", icon: "fa-solid fa-circle-nodes", url: "https://www.netacad.com" },
-    { name: "Introduction to Cybersecurity", authority: "Cisco Networking Academy", period: "Jul 2026", license: "e0fd0b51-600f-48ce-98ea-00f089608bf8", category: "cyber", icon: "fa-solid fa-circle-nodes", url: "https://www.netacad.com" },
-    { name: "AI in Cybersecurity: Vulnerability, Intelligence, Security, and Ethics", authority: "Alison", period: "Jul 2026", license: "7359-42402669", category: "cyber", icon: "fa-solid fa-robot", url: "https://alison.com" },
-    { name: "Internship Common Aptitude Test", authority: "Internship Studio", period: "Jan 2026", license: "CIT-P-2812367", category: "cyber", icon: "fa-solid fa-clipboard-question", url: "#" },
+    {
+      name: "ISC2 Candidate",
+      authority: "ISC2",
+      period: "Mar 2026",
+      validUpto: "Mar 2027",
+      license: "ISC2-Candidate",
+      category: "cyber",
+      icon: "fa-solid fa-user-shield",
+      url: "https://www.credly.com/badges/03e1fe13-b643-4f0b-9055-829cb9d2b323/linked_in_profile",
+      media: null
+    },
+    {
+      name: "Introduction to Cybersecurity (Badge)",
+      authority: "Cisco",
+      period: "Jul 2026",
+      license: null,
+      category: "cyber",
+      icon: "fa-solid fa-circle-nodes",
+      url: "https://www.credly.com/badges/1f16be58-63e3-4a39-b3ba-d9c1acec6db7/linked_in_profile",
+      media: null
+    },
+    {
+      name: "Introduction to Cybersecurity",
+      authority: "Cisco Networking Academy",
+      period: "Jul 2026",
+      license: "e0fd0b51-600f-48ce-9571-38fe960c5909",
+      category: "cyber",
+      icon: "fa-solid fa-circle-nodes",
+      url: "https://www.netacad.com/profile?tab=badges",
+      media: "./assets/certs/introduction-to-cybersecurity.png"
+    },
+    {
+      name: "AI in Cybersecurity: Vulnerability, Intelligence, Security, and Ethics",
+      authority: "Alison",
+      period: "Jul 2026",
+      license: "7359-42402669",
+      category: "cyber",
+      icon: "fa-solid fa-robot",
+      url: "https://alison.com/verify/dbeec0e9c3",
+      media: "./assets/certs/AI in Cybersecurity - Vulnerability, Intelligence, Security, and Ethics - Learner-Verification-7359-42402669.pdf"
+    },
+    {
+      name: "Introduction to the Threat Landscape 3.0",
+      authority: "Fortinet",
+      period: "Jul 2026",
+      license: "2513140417AR",
+      category: "cyber",
+      icon: "fa-solid fa-network-wired",
+      url: "https://training.fortinet.com/local/staticpage/view.php?page=library_introduction-to-the-threat-landscape",
+      media: "./assets/certs/introduction-to-the-threat-landscape-3-0.png"
+    },
+    {
+      name: "Getting Started in Cybersecurity 3.0",
+      authority: "Fortinet",
+      period: "Jul 2026",
+      license: "9894372477AR",
+      category: "cyber",
+      icon: "fa-solid fa-circle-nodes",
+      url: "https://training.fortinet.com/local/staticpage/view.php?page=library_getting-started-in-cybersecurity",
+      media: "./assets/certs/getting-started-in-cybersecurity-3-0.png"
+    },
+    {
+      name: "Fortinet Certified Fundamentals",
+      authority: "Fortinet",
+      period: "Jul 2026",
+      validUpto: "Jul 2028",
+      license: "6944259184AR",
+      category: "cyber",
+      icon: "fa-solid fa-shield-halved",
+      url: "https://training.fortinet.com/local/cert/my/view.php?cert=FCF",
+      media: "./assets/certs/fortinet-certified-fundamentals-cybersecurity.png"
+    },
+    {
+      name: "Technical Introduction to Cybersecurity 3.0",
+      authority: "Fortinet",
+      period: "Jul 2026",
+      validUpto: "28-Jul",
+      license: "0549709797AR",
+      category: "cyber",
+      icon: "fa-solid fa-circle-nodes",
+      url: "https://training.fortinet.com/course/view.php?id=73071",
+      media: "./assets/certs/technical-introduction-to-cybersecurity-3-0.png"
+    },
+    {
+      name: "NSE 1 - Getting Started in cybersecurity 3.0 (Badge)",
+      authority: "Fortinet",
+      period: "Jul 2026",
+      license: "d92aa30c-d4d5-4c38-ac18-5f1d6f8cda7f",
+      category: "cyber",
+      icon: "fa-solid fa-circle-nodes",
+      url: "https://www.credly.com/badges/d92aa30c-d4d5-4c38-ac18-5f1d6f8cda7f/linked_in_profile",
+      media: null
+    },
+    {
+      name: "NSE 1 - Introduction to Threat Landscape  3.0 (Badge)",
+      authority: "Fortinet",
+      period: "Jul 2026",
+      license: "05c288af-628d-4671-9fda-a7066f940670",
+      category: "cyber",
+      icon: "fa-solid fa-network-wired",
+      url: "https://www.credly.com/badges/05c288af-628d-4671-9fda-a7066f940670/linked_in_profile",
+      media: null
+    },
+    {
+      name: "Fortinet Certified Fundamentals Cybersecurity (Badge)",
+      authority: "Fortinet",
+      period: "Jul 2026",
+      validUpto: "28-Jul",
+      license: "0ab05db5-cd88-45fd-b35b-595b378cd5f3",
+      category: "cyber",
+      icon: "fa-solid fa-shield-halved",
+      url: "https://www.credly.com/badges/0ab05db5-cd88-45fd-b35b-595b378cd5f3/linked_in_profile",
+      media: null
+    },
+    {
+      name: "NSE 2 - Technical Introduction to Cybersecurity 3.0 (Badge)",
+      authority: "Fortinet",
+      period: "Jul 2026",
+      license: "7924593e-ba58-4f45-a6f3-e58d427e71e9",
+      category: "cyber",
+      icon: "fa-solid fa-circle-nodes",
+      url: "https://www.credly.com/badges/7924593e-ba58-4f45-a6f3-e58d427e71e9/linked_in_profile",
+      media: null
+    },
+    {
+      name: "Internship Common Aptitude Test",
+      authority: "Internship Studio",
+      period: "Jan 2026",
+      license: "CIT-P-2812367",
+      category: "cyber",
+      icon: "fa-solid fa-clipboard-question",
+      url: "#",
+      media: null
+    },
 
     // Forensic Science & Safety
-    { name: "Diploma in Digital Forensic Investigation", authority: "Alison", period: "Jul 2026", license: "4795-42402669", category: "forensics", icon: "fa-solid fa-fingerprint", url: "https://alison.com" },
-    { name: "Four - Legged detectives: The Mastery of Cadaver Dogs", authority: "C.A.S.E. 23 OFFICIAL", period: "Sep 2024", license: "CASE/GL-12/08", category: "forensics", icon: "fa-solid fa-dog", url: "#" },
-    { name: "Diploma in Fire Safety", authority: "Alison", period: "Jan 2026", license: "6071-42402669", category: "forensics", icon: "fa-solid fa-fire-extinguisher", url: "https://alison.com" },
-    { name: "EHS Guidelines - Environment, Health and Safety", authority: "Alison", period: "Jan 2026", license: "5382-42402669", category: "forensics", icon: "fa-solid fa-helmet-safety", url: "https://alison.com" },
-    { name: "Food Safety and Hygiene in the Catering Industry", authority: "Alison", period: "Jan 2026", license: "1363-42402669", category: "forensics", icon: "fa-solid fa-utensils", url: "https://alison.com" }
+    {
+      name: "Diploma in Digital Forensic Investigation",
+      authority: "Alison",
+      period: "Jul 2026",
+      license: "4795-42402669",
+      category: "forensics",
+      icon: "fa-solid fa-fingerprint",
+      url: "https://alison.com/verify/a265527ee9",
+      media: "./assets/certs/Diploma in Digital Forensics - Learner-Verification-4795-42402669.pdf"
+    },
+    {
+      name: "Four - Legged detectives: The Mastery of Cadaver Dogs",
+      authority: "C.A.S.E. 23 OFFICIAL",
+      period: "Sep 2024",
+      license: "CASE/GL-12/08",
+      category: "forensics",
+      icon: "fa-solid fa-dog",
+      url: "#",
+      media: null
+    },
+    {
+      name: "Diploma in Fire Safety",
+      authority: "Alison",
+      period: "Jan 2026",
+      license: "6071-42402669",
+      category: "forensics",
+      icon: "fa-solid fa-fire-extinguisher",
+      url: "https://alison.com/verify/e9d0b0669c",
+      media: "./assets/certs/Fire Safety - Learner-Verification-6071-42402669.pdf"
+    },
+    {
+      name: "EHS Guidelines - Environment, Health and Safety",
+      authority: "Alison",
+      period: "Jan 2026",
+      license: "5382-42402669",
+      category: "forensics",
+      icon: "fa-solid fa-helmet-safety",
+      url: "https://alison.com/verify/b27544e219",
+      media: "./assets/certs/EHS Guidelines - Environment, Health and Safety - Learner-Verification-5382-42402669.pdf"
+    },
+    {
+      name: "Food Safety and Hygiene in the Catering Industry",
+      authority: "Alison",
+      period: "Jan 2026",
+      license: "1363-42402669",
+      category: "forensics",
+      icon: "fa-solid fa-utensils",
+      url: "https://alison.com/verify/c7319e53ed",
+      media: "./assets/certs/Food Safety and Hygiene in the Catering Industry - Learner-Verification-1363-42402669.pdf"
+    }
   ],
 
   projects: [
